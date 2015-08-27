@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/hsn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Bluelog \nversion 1.0 \n  \n Copyright 2015 IOM Inc \n All Right Reserved \n \n \n Contact us: IOM Developer \n                         lilianthomas8181@gmail.com " />
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iom.bluelog.Detail" >
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/btnEdit"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="41dp"
+            android:layout_weight="2"
+            android:background="#2446a1"
+            android:textColor="#FFFFFF"
+            android:onClick="onClickEdit"
+            android:text="Edit" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+         android:padding="10dp"
+        android:text="Medium Text"
+        android:id="@+id/text_details_detail"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TableRow
+        android:id="@+id/table_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:padding="10dp"
+        android:layout_below="@+id/text_details_detail">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Time:"
+            android:textColor="#993300"
+            android:layout_weight="7"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/item_time_start"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="#993300"
+            android:layout_weight="3"
+            android:textSize="15sp"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/table_details_two"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:padding="10dp"
+        android:layout_below="@+id/table_details">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop Time:"
+            android:textColor="#993300"
+            android:layout_weight="7"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/item_time_stop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="#993300"
+            android:layout_weight="3"
+            android:textSize="15sp"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/table_details_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:padding="10dp"
+        android:layout_below="@+id/table_details_two">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textColor="#993300"
+            android:layout_weight="7"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/item_date_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="#993300"
+            android:layout_weight="3"
+            android:textSize="15sp"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/table_details_adress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:padding="10dp"
+        android:layout_below="@+id/table_details_date">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:textColor="#993300"
+            android:layout_weight="7"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/item_address_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Tddress"
+            android:textColor="#993300"
+            android:layout_weight="3"
+            android:textSize="15sp"/>
+    </TableRow>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="41dp"
+            android:layout_weight="2"
+            android:background="#2446a1"
+            android:textColor="#FFFFFF"
+            android:text="Delete"
+            android:onClick="onCLickDelete"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

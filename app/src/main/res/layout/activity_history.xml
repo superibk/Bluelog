@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.iom.bluelog" >
+
+    <ListView
+        android:id="@+id/listView_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/search_text"
+        android:layout_centerHorizontal="true"
+        android:divider="#EE3914"
+        android:dividerHeight="2dp">
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/search_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="search"
+        android:ems="10" />
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="6">
+
+        <Button
+            android:id="@+id/menu"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_weight="3"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/sample_shared_customized"
+            android:onClick="onClickAboutUs"
+            android:drawableTop="@android:drawable/ic_menu_info_details"  />
+
+
+
+        <Button
+            android:id="@+id/filter"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="41dp"
+            android:layout_weight="3"
+            android:background="@drawable/sample_shared_customized"
+            android:textColor="#FFFFFF"
+            android:drawableTop="@android:drawable/ic_menu_agenda"
+            android:onClick="onClickFilter"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
